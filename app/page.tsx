@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -6,7 +7,9 @@ export default function Home() {
             <h1 className="text-3xl text-indigo-500 font-bold mb-2">
                 Hello Discord Clone
             </h1>
-            <Button variant={"ghost"}>Click Me !</Button>
+            <Link href="/main">
+                <Button variant={"ghost"}>Click Me !</Button>
+            </Link>
         </div>
     );
 }
